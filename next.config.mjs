@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/nocopycat",
+  output: 'export',
+  basePath: '/nocopycat',
+  assetPrefix: '/nocopycat/',
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
