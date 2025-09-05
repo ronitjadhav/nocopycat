@@ -2,10 +2,13 @@
 const nextConfig = {
   output: 'export',
   basePath: '/nocopycat',
-  assetPrefix: '/nocopycat/',
+  trailingSlash: true,
+  reactStrictMode: true,
   images: {
     unoptimized: true,
   },
+  compress: true,
+  poweredByHeader: false,
 };
 
 export default nextConfig;
